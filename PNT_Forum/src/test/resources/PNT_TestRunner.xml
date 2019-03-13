@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PNT Forum Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="Sierra"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="30.0"/>
+    <parameter name="url" value="https://forum.piit.us/"/>
+    <!--<parameter name="userName" value="testuser1"/>-->
+
+    <test name = "PNT Forum Test">
+        <classes>
+            <class name="testcases.TC1_LoginPageTitle"/>
+            <class name="testcases.TC2_UserLogin"/>
+            <class name="testcases.TC3_HomePageTitle"/>
+            <class name="testcases.TC4_Search"/>
+            <class name="testcases.TC5_Profile"/>
+            <class name="testcases.TC6_MyMessages"/>
+            <class name="testcases.TC7_Calendar"/>
+            <class name="testcases.TC8_Members"/>
+            <class name="testcases.TC9_Logout"/>
+            <class name="testcases.TC10_PageSource"/>
+        </classes>
+    </test>
+
+</suite>

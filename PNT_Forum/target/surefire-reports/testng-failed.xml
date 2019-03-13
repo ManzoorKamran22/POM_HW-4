@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [PNT Forum Automation Script ]">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="os" value="OS X"/>
+  <parameter name="os_version" value="Sierra"/>
+  <parameter name="browserVersion" value="30.0"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="cloudEnvName" value="browserstack"/>
+  <parameter name="url" value="https://forum.piit.us/"/>
+  <test thread-count="5" verbose="0" name="PNT Forum Test(failed)">
+    <classes>
+      <class name="testcases.TC2_UserLogin">
+        <methods>
+          <include name="usrLogin"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- testcases.TC2_UserLogin -->
+      <class name="testcases.TC3_HomePageTitle">
+        <methods>
+          <include name="homePageTitle"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- testcases.TC3_HomePageTitle -->
+    </classes>
+  </test> <!-- PNT Forum Test(failed) -->
+</suite> <!-- Failed suite [PNT Forum Automation Script ] -->
